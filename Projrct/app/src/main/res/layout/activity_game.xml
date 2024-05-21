@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginBottom="66dp"
+        android:text="Addition"
+        app:layout_constraintBottom_toTopOf="@+id/subbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/subbtn"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="89dp"
+        android:text="Subtraction"
+        app:layout_constraintBottom_toTopOf="@+id/mulbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addbtn" />
+
+    <Button
+        android:id="@+id/mulbtn"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="318dp"
+        android:text="Multiplication"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subbtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
